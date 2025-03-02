@@ -398,53 +398,15 @@ MenuGroup:AddButton('Unload', function()
     Library:Unload()
 end)
 
-CreditsGroup:AddLabel('@kylosilly: Who made the script', true)
+CreditsGroup:AddLabel('@pahotfgo on discord: Who made the script', true)
 
 CreditsGroup:AddButton({
     Text = 'Join our discord!',
     Func = function()
-        setclipboard('https://discord.gg/frQv5QScXS')
+        setclipboard('https://discord.gg/Ced3QR9m')
     end,
     DoubleClick = false,
     Tooltip = 'Join our official discord server.'
-})
-
-CreditsGroup:AddButton({
-    Text = 'Kylosilly Scriptblox',
-    Func = function()
-        setclipboard('https://scriptblox.com/u/CatBoy')
-    end,
-    DoubleClick = false,
-    Tooltip = 'My scriptblox profile'
-})
-
-CreditsGroup:AddButton({
-    Text = 'Kylosilly Github',
-    Func = function()
-        setclipboard('https://github.com/kylosilly')
-    end,
-    DoubleClick = false,
-    Tooltip = 'My github profile'
-})
-
-CreditsGroup:AddLabel('@netpa: Helped me optimize the script/Gave me some tips/ideas', true)
-
-CreditsGroup:AddButton({
-    Text = 'Netpa Scriptblox',
-    Func = function()
-        setclipboard('https://scriptblox.com/u/netpa')
-    end,
-    DoubleClick = false,
-    Tooltip = 'Netpa scriptblox profile'
-})
-
-CreditsGroup:AddButton({
-    Text = 'Netpa Github',
-    Func = function()
-        setclipboard('https://github.com/61netpa')
-    end,
-    DoubleClick = false,
-    Tooltip = 'Netpa github profile'
 })
 
 MenuGroup:AddLabel('Menu bind'):AddKeyPicker('MenuKeybind', { Default = 'End', NoUI = true, Text = 'Menu keybind' })
